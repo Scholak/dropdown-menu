@@ -11,7 +11,7 @@ if(document.body.clientWidth < 768) {
         nav.classList.toggle('active')
     })
     burger.addEventListener('keypress', (e) => {
-        burger.classList.toggle('active')
+        e.code == 'Enter' ? burger.classList.toggle('active') : ''
         e.code == 'Enter' ? nav.classList.toggle('active') : ''
     })
     
